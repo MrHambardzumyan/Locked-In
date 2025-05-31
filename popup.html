@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Time Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Website Activity</h1>
+
+    <p style="margin-top: 15px; margin-bottom: 25px; text-align: center;">
+      <a href="http://127.0.0.1:5000" target="_blank" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold;">AI Study Planner</a>
+    </p>
+
+    <div class="summary">
+      <h2>Total Time by Category (Today)</h2>
+      <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div class="details">
+      <h2>Detailed Website Usage</h2>
+      <ul id="websiteList"></ul>
+    </div>
+
+    <div class="category-manager">
+      <h2>Move Websites Between Categories</h2>
+      <ul id="categoryList"></ul>
+    </div>
+
+    <div class="blocker-manager">
+      <h2>Website Blocker</h2>
+      <div class="block-input-section">
+        <input type="text" id="blockDomainInput" placeholder="Enter domain to block (e.g., youtube.com)">
+        <select id="blockTimerSelect">
+          <option value="0">Indefinite</option>
+        </select>
+        <button id="addBlockBtn">Block Site</button>
+      </div>
+      <div id="blockMessage" class="message"></div>
+      <h3>Currently Blocked Sites:</h3>
+      <ul id="blockedSitesList"></ul>
+    </div>
+
+    <div class="reset-container">
+      <button id="resetTimeBtn" class="reset-btn">Reset Website Time</button>
+    </div>
+  </div>
+  <script src="lib/chart.umd.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
