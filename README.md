@@ -51,7 +51,7 @@ The AI Study Planner requires a Python Flask backend to extract data from Canvas
 1.  **Install Python:** Ensure you have Python 3 installed.
 2.  **Install Dependencies:**
     ```bash
-    pip install Flask selenium python-dotenv
+    pip install Flask selenium
     ```
 3.  **Install Chrome Driver:**
     -   Download the ChromeDriver executable that matches your Chrome browser version from [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads).
